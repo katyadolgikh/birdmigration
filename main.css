@@ -32,8 +32,13 @@ body{
     height: 3px;
     background: #f649a7;
     transform: scaleX(0);
+    transform-origin: bottom left;
     transition: .6s linear;
 }
 .container a:hover {
     text-shadow: 0 2px 20px rgba(246, 73, 167, 1);
+}
+.container a:hover:before{
+    text-shadow: 0 2px 20px rgba(246, 73, 167, 1);
+    transform: scaleX(1);
 }
