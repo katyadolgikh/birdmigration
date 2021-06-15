@@ -1,43 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@font-face {
+	font-family: 'Redaction';
+  font-style: normal;
+  font-weight: regular;
+	src: local('Redaction'),
+		url(/fonts/Redaction.otf);
 }
-body{
-    font-family: Helvetica, Arial, sans-serif;
-    background: #232840;
-}
-.container{
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 100vh;
-}
-.container a{
-    position: relative;
-    color: #f649a7;
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    text-shadow: 0 2px 3px rgba(246, 73, 167, .5);
-}
-.container a::before{
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: #f649a7;
-    transform: scaleX(0);
-    transform-origin: bottom left;
-    transition: .6s linear;
-}
-.container a:hover {
-    text-shadow: 0 2px 20px rgba(246, 73, 167, 1);
-}
-.container a:hover:before{
-    text-shadow: 0 2px 20px rgba(246, 73, 167, 1);
-    transform: scaleX(1);
+
+h1 {
+	font-family: 'Redaction';
+	font-weight: regular;
 }
